@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tag for specifying the character set -->
+  <meta charset="UTF-8">
+  
+  <!-- Meta tag for responsive design, ensuring the page scales properly on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Link to Google Fonts for the Poppins font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome icons kit for using icons -->
+  <script src="https://kit.fontawesome.com/df98e19b56.js" crossorigin="anonymous"></script>
+  
+  <!-- CryptoJS library for cryptographic functions -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  
+  <!-- External CSS file for styling the page -->
+  <link rel="stylesheet" href="/assets/css/home.css">
+  
+  <!-- Page title that appears in the browser tab -->
+  <title>Superhero Hunter App</title>
+</head>
+
+<body>
+  <!-- Header section -->
+  <header>
+    <div>
+      <!-- Marquee text for a welcoming message -->
+      <h3><marquee>Hello there! Welcome to Superhero Hunter App!!</marquee></h3>
+      <br>
+    </div>   
+  </header>
+
+  <!-- Main content section -->
+  <main>
+    <!-- Container for the search input and buttons -->
+    <div id="container">
+      <!-- Search input field where users can type superhero names -->
+      <input placeholder="Please enter the name of the superhero" class="search" id="inputBar">
+
+      <!-- Search button with a magnifying glass icon -->
+      <button type="submit" class="btn" id="btnsearch">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+      <!-- Container for additional buttons (Reset and Favourites) -->
+      <div id="btnContainer">
+        <!-- Reset button to clear the search input field -->
+        <button id="btnclear" class="btn">Reset</button>
+
+        <!-- Button to view the user's favorite superheroes list -->
+        <button id="favourite" class="btn">
+          <i id="fav-icon" class="fa-solid fa-heart"></i> Favourites
+        </button>
+      </div>
+    </div>
+
+    <!-- Placeholder for any error messages -->
+    <div id="errorMessage">
+    </div>
+
+    <!-- Unordered list to display the search results dynamically -->
+    <ul id="heroList">
+    </ul>
+  </main>
+
+  <!-- Footer section with a copyright notice -->
+  <footer>
+    <p>&copy; All rights reserved.</p>
+  </footer>
+
+  <!-- External JavaScript file containing logic for the search functionality -->
+  <script type="text/javascript" src="/assets/js/home.js">
+  </script>
+</body>
+</html>
