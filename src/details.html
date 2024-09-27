@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta tags for character encoding, compatibility, and viewport settings -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <!-- FontAwesome icons kit -->
+        <script src="https://kit.fontawesome.com/df98e19b56.js" crossorigin="anonymous"></script>
+
+		<!-- Page title -->
+		<title>Superhero Info</title>
+
+        <!-- External CSS files for styling the page -->
+        <link rel="stylesheet" href="/assets/css/home.css">
+		<link rel="stylesheet" href="/assets/css/details.css">
+	</head>
+
+	<body>
+        <!-- Header section of the page -->
+        <header class="flex">
+            <!-- Site Icon and Name -->
+            <div class="flex nav-logo">
+				<!-- Icon for list and title of the page -->
+                <i class="fa-solid fa-list"></i>
+                <h1 id="appName">Details</h1>
+            </div>
+
+           <!-- Favourites/Home Button -->
+           <div class="flex nav-buttons">             
+               <a href="./home.html" class="flex favs-btn">
+				   <!-- Home button icon and text -->
+                   <i id="fav-icon" class="fa-solid fa-house"></i>
+                   <p>Home</p>
+               </a>
+               <a href="./fav.html" class="flex favs-btn">
+                <!-- fav button icon and text -->
+                <i id="fav-icon" class="fa-solid fa-heart"></i>
+                <p>Favourite</p>
+            </a>
+               
+           </div>
+        </header>
+
+		<!-- Main content container for superhero details -->
+		<div id="detailsContaier">
+			
+			<!-- Superhero title section -->
+			<div id="name" class="details">
+				<h2>TITLE :</h2>
+			</div>
+
+			<!-- Superhero first appearance section -->
+			<div id="release-data" class="details">
+				<h2>FIRST APPEARANCE :</h2>
+			</div>
+
+			<!-- Superhero description section -->
+            <div id="description" >
+                <h2>DESCRIPTION :</h2>
+            </div>
+
+			<!-- Section for number of comics -->
+            <div id="comics">
+                <h2>Comics :</h2>
+                <h4 id="comicNumber">Number of Comics available: </h4>
+            </div>
+
+			<!-- Section for number of series -->
+            <div id="series">
+                <h2>Series :</h2>
+                <h4 id="seriesNumber">Number of Series: </h4>
+            </div>
+		</div>
+
+		<!-- Placeholder for superhero image -->
+		<img src="">
+
+		<!-- External JavaScript file for handling page logic -->
+		<script src="/assets/js/details.js"></script>  
+
+		<!-- Footer section of the page -->
+		<footer>
+			<p>&copy; All rights reserved.</p>
+		</footer>
+	</body>
+</html>
